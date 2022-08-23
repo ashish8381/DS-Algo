@@ -1,0 +1,46 @@
+// Question
+//https://leetcode.com/problems/median-of-two-sorted-arrays
+
+
+
+class Solution {
+    public double findMedianSortedArrays(int[] nums1, int[] nums2) {
+        
+        
+        
+        int l1=nums1.length;
+        int l2=nums2.length;
+        
+        int l3=l1+l2;
+        
+        int c[]=new int[l3];
+        
+        
+        System.arraycopy(nums1, 0, c, 0, l1);
+        System.arraycopy(nums2, 0, c, l1, l2);
+        
+        Arrays.sort(c);
+        
+        int p=0;
+        
+        if(l3%2==0){
+            
+            p=l3/2;
+            
+            double b;
+            
+            b = (double)((c[p]+c[p-1])/2.0);
+            
+            return b; 
+        }else{
+            
+            p=l3/2.0;
+            
+            double bb=Double.valueOf(c[p]);
+            
+            return bb;
+            
+        }
+        
+    }
+}
