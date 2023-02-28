@@ -1,7 +1,7 @@
 // JAVA program for the above approach
 import java.util.*;
  
-class GFG{
+class algo{
  
 static void printSubStrings(String str)
 {
@@ -26,7 +26,7 @@ public static void main(String[] args)
 }
 }
  
-// This code is contributed by gauravrajput1
+
 
 
 */
